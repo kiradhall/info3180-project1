@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="property-detail-wrapper">
+  <div class="property-detail-card">
+    
+    <div class="property-detail-image">
+      {% if property.photo_url %}
+        <img src="{{ property.photo_url }}" alt="{{ property.title }}">
+      {% else %}
+        <div class="no-image">No photo available</div>
+      {% endif %}
+    </div>
+
+    <div class="property-detail-content">
+      <h1 class="property-title">{{ property.title }}</h1>
+
+      <div class="property-badges">
+        <span class="price-badge">
+          ${{ "{:,.0f}".format(property.price|float) if property.price else 'N/A' }}
+        </span>
+        <span class="type-badge">
+          {{ property.property_type or 'N/A' }}
+        </span>
+      </div>
+
+      <p class="property-description">
+        {{ property.description or 'No description provided.' }}
+      </p>
+
+      <div class="property-meta">
+        <span>{{ property.rooms or 'N/A' }} Bedrooms</span>
+        <span>{{ property.bathrooms or 'N/A' }} Bathrooms</span>
+      </div>
+
+      <p class="property-location">
+        {{ property.location or 'Location not specified' }}
+      </p>
+
+      <div class="property-actions">
+        <a href="#" class="email-btn">Email Realtor</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

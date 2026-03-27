@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="property-form-wrapper">
+  <h1 class="property-form-title">Add New Property</h1>
+
+  <div class="property-form-card">
+    <form method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="title" class="form-label">Property Title</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="rooms" class="form-label">No. of Rooms</label>
+          <input type="number" class="form-control" id="rooms" name="rooms" min="0" step="1" placeholder="3">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="bathrooms" class="form-label">No. of Bathrooms</label>
+          <input type="number" class="form-control" id="bathrooms" name="bathrooms" min="0" step="0.1" placeholder="2">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="price" class="form-label">Price</label>
+          <input type="text" class="form-control" id="price" name="price" placeholder="15,000,000">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="property_type" class="form-label">Property Type</label>
+          <select class="form-select" id="property_type" name="property_type">
+            <option value="" selected>Select</option>
+            <option value="House">House</option>
+            <option value="Apartment">Apartment</option>
+            <option value="Townhouse">Townhouse</option>
+            <option value="Condo">Condo</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" class="form-control" id="location" name="location" placeholder="10 Waterloo Rd">
+      </div>
+
+      <div class="mb-3">
+        <label for="photo" class="form-label">Photo</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Add Property</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

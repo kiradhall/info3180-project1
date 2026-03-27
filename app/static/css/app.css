@@ -1,3 +1,202 @@
 body {
     padding-top: 5rem;
+    background-color: #f3f4f6;
+}
+
+h1 {
+    font-size: 2.5rem ;
+    font-weight: 300;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    border: 0 !important;
+}
+
+.price-badge {
+  display: inline-block;      
+  align-self: flex-start;     
+  background-color: #5fa7fc;  
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;        
+  font-size: 14px;
+}
+
+.navbar.bg-primary {
+  background-color: #15b8a7 !important; 
+}
+
+.view-btn {
+  background-color: #15b8a7;
+  color: white;
+  border: none;
+}
+
+.view-btn:hover {
+  background-color: #0d9184;
+}
+
+.property-form-wrapper {
+  margin-left: 120px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.property-form-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.property-form-card {
+  background: #fff;
+  width: 700px;
+  padding: 22px;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.property-form-card .form-label {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.property-form-card .form-control,
+.property-form-card .form-select {
+  font-size: 14px;
+}
+
+.property-form-card textarea {
+  resize: none;
+}
+
+.property-form-card .btn-primary {
+  background-color: #5fa1ff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+}
+
+.property-form-card .btn-primary:hover {
+  background-color: #4277c1 !important;
+}
+
+.form-label {
+  font-weight: 600 !important;
+  font-size: 15px !important; 
+}
+
+.property-detail-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.property-detail-card {
+  display: flex;
+  width: 820px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.property-detail-image {
+  width: 43%;
+}
+
+.property-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.no-image {
+  height: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  color: #777;
+}
+
+.property-detail-content {
+  width: 57%;
+  padding: 26px;
+}
+
+.property-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.property-badges {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.price-badge {
+  background: #5fa8ff;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.type-badge {
+  background: #f6c23e;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.property-description {
+  color: #444;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.property-meta {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 16px;
+  color: #444;
+  font-size: 15px;
+}
+
+.property-location {
+  margin-bottom: 20px;
+  color: #444;
+  font-size: 15px;
+}
+
+.email-btn {
+  display: inline-block;
+  background: #20b2aa;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.email-btn:hover {
+  background: #199a93;
+  color: #fff;
 }
